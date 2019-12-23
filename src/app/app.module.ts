@@ -12,6 +12,10 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
 import { HeroFormTemplateComponent } from './hero-form-template/hero-form-template.component';
 import { ForbiddenNameDirective } from './forbidden-name.directive';
 import { IdentityRevealedValidatorDirective } from './identity-revealed.directive';
+import { HeroBioComponent } from './hero-bio/hero-bio.component';
+import {HeroBiosAndContactsComponent, HeroBiosComponent} from './hero-bios/hero-bios.component';
+import { HeroOfTheMonthComponent } from './hero-of-the-month/hero-of-the-month.component';
+import { HeroContactComponent } from './hero-contact/hero-contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,12 @@ import { IdentityRevealedValidatorDirective } from './identity-revealed.directiv
     HeroFormComponent,
     HeroFormTemplateComponent,
     ForbiddenNameDirective,
-    IdentityRevealedValidatorDirective
+    IdentityRevealedValidatorDirective,
+    HeroBioComponent,
+    HeroBiosComponent,
+    HeroOfTheMonthComponent,
+    HeroContactComponent,
+    HeroBiosAndContactsComponent
   ],
   imports: [
     BrowserModule,
