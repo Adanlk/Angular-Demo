@@ -16,6 +16,7 @@ import { HeroBioComponent } from './hero-bio/hero-bio.component';
 import {HeroBiosAndContactsComponent, HeroBiosComponent} from './hero-bios/hero-bios.component';
 import { HeroOfTheMonthComponent } from './hero-of-the-month/hero-of-the-month.component';
 import { HeroContactComponent } from './hero-contact/hero-contact.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,10 @@ import { HeroContactComponent } from './hero-contact/hero-contact.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  /* 依赖注入 */
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@ import { HeroCacheService } from '../di/hero-cache.service';
   template: `
     <h4>{{hero.name}}</h4>
     <ng-content></ng-content>
-    <textarea cols="25" [(ngModel)]="hero.description"></textarea>`,
+    <textarea cols="25" [(ngModel)]="hero.power"></textarea>`,
     providers: [HeroCacheService]
 })
 export class HeroBioComponent implements OnInit {
